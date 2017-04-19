@@ -104,15 +104,53 @@ namespace BasicDecisionTree
 
     public string Predict(Board board)
     {
-      DataTable dataTable = this.CreateDataTable(board);
-      Codification codification = new Codification(dataTable);
-      int[] codewords = this.Model.Decide(codification.Apply(dataTable).ToArray<int>("v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13", "v14", "v15"));
-      string moveString = codification.Revert(codewords)[0];
-      string[] stringSeparators = new string[] { "Up","Right","Down","Left" };
-      var result = moveString.Split(stringSeparators, StringSplitOptions.None);
-      return result[0];
+        DataTable dataTable = this.CreateDataTable(board);
+        Codification codification = new Codification(dataTable);
+        var inputs = codification.Apply(dataTable)
+            .ToArray<int>("v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13", "v14",
+                "v15");
+        int[] codewords = this.Model.Decide(inputs);
+        if (codewords[0] == -1)
+        {
+            return null;
+        }
+        string moveString = codification.Revert(codewords)[0];
+        string[] stringSeparators = new string[] { "Up","Right","Down","Left" };
+        var result = moveString.Split(stringSeparators, StringSplitOptions.None);
+        return result[0];
     }
 
+      protected string GetFirstString(string moveString)
+      {
+          string[] options = new string[4]{"Up","Right","Down","Left"};
+          int length = 5;
+          while (length > 1)
+          {
+              var first = moveString.Substring(0, length);
+              foreach (var option in options)
+              {
+                  if (first == option)
+                  {
+                      return option;
+                  }
+              }
+              length -= 1;
+          }
+          throw new Exception("Did not find a string match");
+      }
+      public string Predict(DataTable dataTable)
+      {
+          Codification codification = new Codification(dataTable);
+          int[] codewords = this.Model.Decide(codification.Apply(dataTable).ToArray<int>("v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13", "v14", "v15"));
+          if (codewords[0] == -1)
+          {
+              return null;
+          }
+          string moveString = codification.Revert(codewords)[0];
+
+          var firstDirectionInString = GetFirstString(moveString);
+          return firstDirectionInString;
+      }
     private static DecisionTree TrainModel(DataTable dt)
     {
       DecisionTree tree = new DecisionTree((IList<DecisionVariable>) new DecisionVariable[16]
@@ -134,12 +172,15 @@ namespace BasicDecisionTree
         new DecisionVariable("v14", 2048),
         new DecisionVariable("v15", 2048)
       }, 1000);
-      Codification codification = new Codification(dt);
-      ID3Learning id3Learning = new ID3Learning(tree);
-      DataTable table = codification.Apply(dt);
-      int[][] array1 = table.ToArray<int>("v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13", "v14", "v15");
-      int[] array2 = table.ToArray<int>("classification");
-      return id3Learning.Learn(array1, array2, (double[]) null);
+        Codification codification = new Codification(dt);
+        //ID3Learning id3Learning = new ID3Learning(tree);
+        DataTable table = codification.Apply(dt);
+        int[][] array1 = table.ToArray<int>("v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13", "v14", "v15");
+        int[] array2 = table.ToArray<int>("classification");
+        C45Learning teacher = new C45Learning();
+        DecisionTree model = teacher.Learn(array1, array2, null);
+        //DecisionTree model = id3Learning.Learn(array1, array2, (double[]) null);
+        return model;
     }
 
     private static DataTable GetDataTable()

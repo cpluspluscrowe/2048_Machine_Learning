@@ -23,14 +23,15 @@ namespace _2048_console
     {
         static void Main(string[] args)
         {
-            //DecisionTreeModel model = new DecisionTreeModel();
-            //model.TrainModel();
-            Train();
+            DecisionTreeModel model = new DecisionTreeModel();
+            model.TrainModel();
+            model.Predict(model.GetTrainingData());
+            Train(model);
         }
 
         static void Train(DecisionTreeModel model = null)
         {
-            for (int i = 0; i <= 10; i++)
+            for (int i = 0; i <= 100; i++)
             {
                 Board board = new Board();
                 Direction direction = new Direction();

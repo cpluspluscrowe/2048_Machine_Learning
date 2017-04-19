@@ -45,17 +45,28 @@ namespace Turns
         {
             return Tracker;
         }
-        protected bool NextTurn()
+        protected void SetSwipe(Direction Swiper)
         {
             if (Model != null)
             {
                 string prediction = Model.Predict(GameBoard);
-                Swiper.SetSwipe(prediction);
+                if (prediction == null)
+                {
+                    Swiper.SetSwipe(Swiper.GetNextSwipe());
+                }
+                else
+                {
+                    Swiper.SetSwipe(prediction);
+                }
             }
             else
             {
                 Swiper.SetSwipe(Swiper.GetNextSwipe());
-            }
+            }   
+        }
+        protected bool NextTurn()
+        {
+            SetSwipe(Swiper);
             Updater.Update(GameBoard, Swiper, Adder);
             Tracker.AddData(GameBoard,Swiper.GetDirectionString());
             if (GameOverChecker.IsGameOver(GameBoard, Swiper, Updater) == true)

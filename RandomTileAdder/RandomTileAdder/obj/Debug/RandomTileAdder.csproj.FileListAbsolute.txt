@@ -1,0 +1,7 @@
+C:\Users\CCrowe\Documents\2048\RandomTileAdder\RandomTileAdder\bin\Debug\RandomTileAdder.dll
+C:\Users\CCrowe\Documents\2048\RandomTileAdder\RandomTileAdder\bin\Debug\RandomTileAdder.pdb
+C:\Users\CCrowe\Documents\2048\RandomTileAdder\RandomTileAdder\bin\Debug\GameBoard.dll
+C:\Users\CCrowe\Documents\2048\RandomTileAdder\RandomTileAdder\bin\Debug\GameBoard.pdb
+C:\Users\CCrowe\Documents\2048\RandomTileAdder\RandomTileAdder\obj\Debug\RandomTileAdder.csprojResolveAssemblyReference.cache
+C:\Users\CCrowe\Documents\2048\RandomTileAdder\RandomTileAdder\obj\Debug\RandomTileAdder.dll
+C:\Users\CCrowe\Documents\2048\RandomTileAdder\RandomTileAdder\obj\Debug\RandomTileAdder.pdb

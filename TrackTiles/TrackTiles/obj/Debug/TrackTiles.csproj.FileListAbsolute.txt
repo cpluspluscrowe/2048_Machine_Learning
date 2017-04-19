@@ -1,0 +1,8 @@
+C:\Users\CCrowe\Documents\2048\TrackTiles\TrackTiles\bin\Debug\TrackTiles.dll
+C:\Users\CCrowe\Documents\2048\TrackTiles\TrackTiles\bin\Debug\TrackTiles.pdb
+C:\Users\CCrowe\Documents\2048\TrackTiles\TrackTiles\bin\Debug\GameBoard.dll
+C:\Users\CCrowe\Documents\2048\TrackTiles\TrackTiles\bin\Debug\Swipe.dll
+C:\Users\CCrowe\Documents\2048\TrackTiles\TrackTiles\bin\Debug\GameBoard.pdb
+C:\Users\CCrowe\Documents\2048\TrackTiles\TrackTiles\bin\Debug\Swipe.pdb
+C:\Users\CCrowe\Documents\2048\TrackTiles\TrackTiles\obj\Debug\TrackTiles.dll
+C:\Users\CCrowe\Documents\2048\TrackTiles\TrackTiles\obj\Debug\TrackTiles.pdb

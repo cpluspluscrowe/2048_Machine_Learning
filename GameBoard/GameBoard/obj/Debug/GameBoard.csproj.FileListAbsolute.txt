@@ -1,0 +1,5 @@
+C:\Users\CCrowe\Documents\2048\GameBoard\GameBoard\bin\Debug\GameBoard.dll
+C:\Users\CCrowe\Documents\2048\GameBoard\GameBoard\bin\Debug\GameBoard.pdb
+C:\Users\CCrowe\Documents\2048\GameBoard\GameBoard\obj\Debug\GameBoard.dll
+C:\Users\CCrowe\Documents\2048\GameBoard\GameBoard\obj\Debug\GameBoard.pdb
+C:\Users\CCrowe\Documents\2048\GameBoard\GameBoard\obj\Debug\GameBoard.csprojResolveAssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\Checker.dll
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\Checker.pdb
+C:\Users\CCrowe\Documents\2048\Checker\Checker\obj\Debug\Checker.csprojResolveAssemblyReference.cache
+C:\Users\CCrowe\Documents\2048\Checker\Checker\obj\Debug\Checker.dll
+C:\Users\CCrowe\Documents\2048\Checker\Checker\obj\Debug\Checker.pdb
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\GameBoard.dll
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\GameBoard.pdb
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\RandomTileAdder.dll
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\Swipe.dll
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\Update.dll
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\RandomTileAdder.pdb
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\Swipe.pdb
+C:\Users\CCrowe\Documents\2048\Checker\Checker\bin\Debug\Update.pdb

@@ -1,0 +1,5 @@
+C:\Users\CCrowe\Documents\2048\Swipe\Swipe\bin\Debug\Swipe.dll
+C:\Users\CCrowe\Documents\2048\Swipe\Swipe\bin\Debug\Swipe.pdb
+C:\Users\CCrowe\Documents\2048\Swipe\Swipe\obj\Debug\Swipe.dll
+C:\Users\CCrowe\Documents\2048\Swipe\Swipe\obj\Debug\Swipe.pdb
+C:\Users\CCrowe\Documents\2048\Swipe\Swipe\obj\Debug\Swipe.csprojResolveAssemblyReference.cache

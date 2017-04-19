@@ -1,0 +1,11 @@
+C:\Users\CCrowe\Documents\2048\Update\Update\bin\Debug\Update.dll
+C:\Users\CCrowe\Documents\2048\Update\Update\bin\Debug\Update.pdb
+C:\Users\CCrowe\Documents\2048\Update\Update\obj\Debug\Update.dll
+C:\Users\CCrowe\Documents\2048\Update\Update\obj\Debug\Update.pdb
+C:\Users\CCrowe\Documents\2048\Update\Update\bin\Debug\GameBoard.dll
+C:\Users\CCrowe\Documents\2048\Update\Update\bin\Debug\Swipe.dll
+C:\Users\CCrowe\Documents\2048\Update\Update\bin\Debug\GameBoard.pdb
+C:\Users\CCrowe\Documents\2048\Update\Update\bin\Debug\Swipe.pdb
+C:\Users\CCrowe\Documents\2048\Update\Update\bin\Debug\RandomTileAdder.dll
+C:\Users\CCrowe\Documents\2048\Update\Update\bin\Debug\RandomTileAdder.pdb
+C:\Users\CCrowe\Documents\2048\Update\Update\obj\Debug\Update.csprojResolveAssemblyReference.cache

@@ -1,0 +1,16 @@
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\DatabaseUploader.dll.config
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\DatabaseUploader.dll
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\DatabaseUploader.pdb
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\EntityFramework.dll
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\EntityFramework.SqlServer.dll
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\System.Data.SQLite.dll
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\System.Data.SQLite.EF6.dll
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\System.Data.SQLite.Linq.dll
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\TrackTiles.dll
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\EntityFramework.xml
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\EntityFramework.SqlServer.xml
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\System.Data.SQLite.xml
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\bin\x64\Debug\TrackTiles.pdb
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\obj\x64\Debug\DatabaseUploader.dll
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\obj\x64\Debug\DatabaseUploader.pdb
+C:\Users\CCrowe\Documents\2048\DatabaseUploader\DatabaseUploader\obj\x64\Debug\DatabaseUploader.csprojResolveAssemblyReference.cache

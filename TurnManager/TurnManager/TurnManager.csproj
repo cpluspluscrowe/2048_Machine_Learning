@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BasicDecisionTree">
+      <HintPath>..\..\BasicDecisionTree\obj\Debug\BasicDecisionTree.dll</HintPath>
+    </Reference>
     <Reference Include="Checker">
       <HintPath>..\..\Checker\Checker\obj\Debug\Checker.dll</HintPath>
     </Reference>

@@ -14,6 +14,6 @@ C:\Users\CCrowe\Documents\2048\TurnManager\TurnManager\bin\Debug\TrackTiles.pdb
 C:\Users\CCrowe\Documents\2048\TurnManager\TurnManager\bin\Debug\Update.pdb
 C:\Users\CCrowe\Documents\2048\TurnManager\TurnManager\obj\Debug\TurnManager.dll
 C:\Users\CCrowe\Documents\2048\TurnManager\TurnManager\obj\Debug\TurnManager.pdb
+C:\Users\CCrowe\Documents\2048\TurnManager\TurnManager\obj\Debug\TurnManager.csprojResolveAssemblyReference.cache
 C:\Users\CCrowe\Documents\2048\TurnManager\TurnManager\bin\Debug\BasicDecisionTree.dll
 C:\Users\CCrowe\Documents\2048\TurnManager\TurnManager\bin\Debug\BasicDecisionTree.pdb
-C:\Users\CCrowe\Documents\2048\TurnManager\TurnManager\obj\Debug\TurnManager.csprojResolveAssemblyReference.cache

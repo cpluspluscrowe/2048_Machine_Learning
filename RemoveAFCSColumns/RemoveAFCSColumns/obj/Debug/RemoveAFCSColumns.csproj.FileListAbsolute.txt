@@ -1,5 +1,0 @@
-C:\Users\CCrowe\Documents\2048\RemoveAFCSColumns\RemoveAFCSColumns\bin\Debug\RemoveAFCSColumns.exe.config
-C:\Users\CCrowe\Documents\2048\RemoveAFCSColumns\RemoveAFCSColumns\bin\Debug\RemoveAFCSColumns.exe
-C:\Users\CCrowe\Documents\2048\RemoveAFCSColumns\RemoveAFCSColumns\bin\Debug\RemoveAFCSColumns.pdb
-C:\Users\CCrowe\Documents\2048\RemoveAFCSColumns\RemoveAFCSColumns\obj\Debug\RemoveAFCSColumns.exe
-C:\Users\CCrowe\Documents\2048\RemoveAFCSColumns\RemoveAFCSColumns\obj\Debug\RemoveAFCSColumns.pdb

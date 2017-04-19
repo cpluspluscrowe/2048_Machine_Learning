@@ -9,6 +9,7 @@ using RandomTileAdder;
 using Swipe;
 using Update;
 using TrackTiles;
+using BasicDecisionTree;
 
 namespace Turns
 {
@@ -20,7 +21,8 @@ namespace Turns
         protected TileAdder Adder;
         protected GameOverChecker GameOverChecker;
         protected Tracker Tracker;
-        public TurnManager(Direction direction,Board board,IUpdater updater,TileAdder adder,GameOverChecker gameOverChecker,Tracker tracker)
+        protected DecisionTreeModel Model;
+        public TurnManager(Direction direction,Board board,IUpdater updater,TileAdder adder,GameOverChecker gameOverChecker,Tracker tracker,DecisionTreeModel model)
         {
             this.GameBoard = board;
             this.Swiper = direction;
@@ -28,6 +30,7 @@ namespace Turns
             this.Adder = adder;
             this.GameOverChecker = gameOverChecker;
             this.Tracker = tracker;
+            this.Model = model;
         }
         public void Play()
         {
@@ -44,7 +47,15 @@ namespace Turns
         }
         protected bool NextTurn()
         {
-            Swiper.SetSwipe(Swiper.GetNextSwipe());
+            if (Model != null)
+            {
+                string prediction = Model.Predict(GameBoard);
+                Swiper.SetSwipe(prediction);
+            }
+            else
+            {
+                Swiper.SetSwipe(Swiper.GetNextSwipe());
+            }
             Updater.Update(GameBoard, Swiper, Adder);
             Tracker.AddData(GameBoard,Swiper.GetDirectionString());
             if (GameOverChecker.IsGameOver(GameBoard, Swiper, Updater) == true)

@@ -55,6 +55,25 @@ namespace Swipe
         {
             this.SwipeDirection = direction.SwipeDirection;
         }
+        public void SetSwipe(string direction)
+        {
+            if (direction == "Up")
+            {
+                SetSwipe(this.GetUp());
+            }
+            else if (direction == "Right")
+            {
+                SetSwipe(this.GetRight());
+            }
+            else if (direction == "Down")
+            {
+                SetSwipe(this.GetDown());
+            }
+            else if (direction == "Left")
+            {
+                SetSwipe(this.GetLeft());
+            }
+        }
         public Tuple<int, int> GetSwipe()
         {
             return this.SwipeDirection;

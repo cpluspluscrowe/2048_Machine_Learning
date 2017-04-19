@@ -25,8 +25,9 @@ namespace BasicDecisionTree
 
     public void TrainModel()
     {
-      int[] numArray = new int[11]
+      int[] numArray = new int[12]
       {
+        0,
         2,
         4,
         8,
@@ -106,7 +107,10 @@ namespace BasicDecisionTree
       DataTable dataTable = this.CreateDataTable(board);
       Codification codification = new Codification(dataTable);
       int[] codewords = this.Model.Decide(codification.Apply(dataTable).ToArray<int>("v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11", "v12", "v13", "v14", "v15"));
-      return codification.Revert(codewords)[0];
+      string moveString = codification.Revert(codewords)[0];
+      string[] stringSeparators = new string[] { "Up","Right","Down","Left" };
+      var result = moveString.Split(stringSeparators, StringSplitOptions.None);
+      return result[0];
     }
 
     private static DecisionTree TrainModel(DataTable dt)

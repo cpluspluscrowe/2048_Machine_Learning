@@ -98,6 +98,10 @@
       <HintPath>..\packages\Accord.Statistics.3.4.0\lib\net45\Accord.Statistics.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="BasicDecisionTree, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BasicDecisionTree\obj\Debug\BasicDecisionTree.dll</HintPath>
+    </Reference>
     <Reference Include="Checker">
       <HintPath>..\..\Checker\Checker\obj\Debug\Checker.dll</HintPath>
     </Reference>

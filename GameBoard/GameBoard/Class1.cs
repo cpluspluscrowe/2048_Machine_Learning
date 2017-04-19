@@ -24,10 +24,6 @@ namespace GameBoard
                     this.Table[i, j] = 0;
                 }
             }
-            this.Table[0, 0] = 2;
-            this.Table[0, 1] = 4;
-            this.Table[1, 0] = 2;
-            this.Table[0, 3] = 8;
         }
 
         public bool IsTileEmpty(int i, int j)
